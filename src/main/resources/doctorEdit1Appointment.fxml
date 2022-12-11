@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #808000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.tikhonov.clinic.view.controllers.doctor.DoctorEdit1Appointment">
+    <children>
+        <AnchorPane layoutY="94.0" prefHeight="306.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+                <Button fx:id="editAppointment" layoutX="277.0" layoutY="182.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="146.0" text="Редактирование" />
+            <DatePicker fx:id="dateField" layoutX="224.0" layoutY="51.0" prefHeight="32.0" prefWidth="276.0" promptText="Дата приема" />
+            <Label alignment="CENTER" layoutX="56.0" layoutY="51.0" prefHeight="32.0" prefWidth="112.0" text="Выберите дату" />
+            <Label alignment="CENTER" layoutX="15.0" layoutY="121.0" prefHeight="32.0" prefWidth="193.0" text="Выберите прием" />
+            <Button fx:id="findAppointment" layoutX="521.0" layoutY="51.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="157.0" text="Найти приемы" />
+            <ComboBox fx:id="appointments" layoutX="224.0" layoutY="121.0" prefHeight="32.0" prefWidth="276.0" />
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutX="148.0" layoutY="14.0" prefHeight="52.0" prefWidth="405.0" text="Редактировать прием" textAlignment="JUSTIFY">
+            <font>
+                <Font name="Tempus Sans ITC" size="33.0" />
+            </font>
+        </Label>
+        <Button fx:id="backButton" layoutX="582.0" layoutY="10.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="104.0" text="Назад" />
+    </children>
+</AnchorPane>

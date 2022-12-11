@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #808000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.tikhonov.clinic.view.controllers.patient.PatientBuyProcedure">
+    <children>
+        <AnchorPane layoutY="94.0" prefHeight="306.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Button fx:id="buyButton" layoutX="280.0" layoutY="106.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="140.0" text="Оплатить" />
+            <ComboBox fx:id="procedurePicker" layoutX="222.0" layoutY="54.0" prefHeight="35.0" prefWidth="256.0" />
+            <Label alignment="CENTER" layoutX="280.0" layoutY="22.0" prefHeight="22.0" prefWidth="140.0" text="Выберите процедуру" />
+         </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutX="133.0" layoutY="19.0" prefHeight="47.0" prefWidth="434.0" text="Оплатить процедуры" textAlignment="JUSTIFY">
+            <font>
+                <Font name="Tempus Sans ITC" size="33.0" />
+            </font>
+        </Label>
+        <Button fx:id="backButton" layoutX="590.0" layoutY="15.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="96.0" text="Выйти" />
+    </children>
+</AnchorPane>

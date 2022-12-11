@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #808000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.tikhonov.clinic.view.controllers.doctor.DoctorFindAppointment">
+    <children>
+        <AnchorPane layoutY="94.0" prefHeight="306.0" prefWidth="700.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <TableView fx:id="table" layoutX="411.0" layoutY="14.0" prefHeight="284.0" prefWidth="275.0">
+              <columns>
+                <TableColumn fx:id="date" prefWidth="117.0" text="date" />
+                <TableColumn fx:id="status" prefWidth="157.0" text="appointment_status" />
+              </columns>
+            </TableView>
+            <DatePicker fx:id="dateField" layoutX="78.0" layoutY="56.0" prefHeight="35.0" prefWidth="256.0" promptText="дата" />
+            <Label alignment="CENTER" layoutX="136.0" layoutY="25.0" prefHeight="22.0" prefWidth="140.0" text="Выберите дату" />
+            <Button fx:id="findButton" layoutX="136.0" layoutY="109.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="140.0" text="Найти" />
+         </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutX="180.0" layoutY="15.0" prefHeight="54.0" prefWidth="340.0" text="Посмотреть приемы" textAlignment="JUSTIFY">
+            <font>
+                <Font name="Tempus Sans ITC" size="33.0" />
+            </font>
+        </Label>
+        <Button fx:id="backButton" layoutX="590.0" layoutY="15.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="96.0" text="Выйти" />
+    </children>
+</AnchorPane>
